@@ -1,0 +1,196 @@
+/* Default Styles */
+*{
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* End of Default Styles */
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+/* Navigation */
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    z-index: 1;
+    box-shadow: 0 .1rem 3rem rgba(0, 0, 0, .8);
+}
+
+.logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left:3rem ;
+}
+
+.nav-items{
+    height: 110px;
+    width: 35rem;
+    position: relative;
+    right: 25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+/* End of Navigation */
+
+
+/* Header */
+header{
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+    left: 0;
+    padding-top:5rem ;
+    height: 100vh;
+}
+
+.summer-showdown img{
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    width: 90rem;
+}
+/* End of Header */
+
+/* Teams */
+section{
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+    left: 0;
+    padding-top:5rem ;
+    height: 100vh;
+}
+
+.teams img{
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    width: 90rem;
+}
+
+/* End of Teams */
+
+@media (max-width: 1024px) {
+    .nav-items{
+        left: -5rem;
+        width: 25rem;
+    }
+
+    .logo{
+        scale: 70%;
+        margin-left: 0;
+    }
+    
+    header{
+        padding: 0;
+    }
+    
+    .summer-showdown{
+        scale: 60%;
+    }
+
+    .teams{
+        scale: 60%;
+    }
+    
+    section{
+        padding: 0;
+    }
+    }
+
+@media (max-width: 768px) {
+        .nav-items{
+            left: -5rem;
+            width: 20rem;
+        }
+
+        .nav-link{
+            font-size:1rem;
+        }
+
+        .logo{
+            scale: 70%;
+            margin-left: 0;
+        }
+        
+        header{
+            padding: 0;
+        }
+        
+        .summer-showdown{
+            scale: 60%;
+        }
+    
+        .teams{
+            scale: 60%;
+        }
+        
+        section{
+            padding: 0;
+        }
+        }
+
+@media (max-width: 430px) {
+
+        .container{
+            overflow: hidden;
+        }
+
+        .nav-items{
+            left: 3rem;
+            width: 20rem;
+        }
+        .nav-link{
+            font-size:1rem;
+        }
+
+        .logo{
+            display: none;
+        }
+        
+        header{
+            padding: 0;
+            height: 25rem;
+        }
+        
+        .summer-showdown{
+            scale: 25%;
+            height: 10rem;
+        }
+    
+        .teams{
+            scale: 25%;
+        }
+        
+        section{
+            padding: 0;
+            height: 20rem;
+            top: 0;
+            align-items: center;
+        }
+        }
